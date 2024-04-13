@@ -7,142 +7,153 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Caos News - Inicio</title>
+  <style>
+    /* Ajusta el tamaño de las imágenes del carrusel */
+    #carouselExampleCaptions .carousel-item img {
+      width: 100!important;
+      height: 400px!important; /* Puedes ajustar esta altura según tus necesidades */
+      object-fit: cover!important;
+    }
+  </style>
 </head>
 <header class="mb-2">
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/views/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/views/suscripcion.html">Suscripción</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/views/login.html">Login</a>
-                </li>
-            </ul>
-        </div>
-        <a class="navbar-brand ml-auto" href="/index.html">
-            <img src="/img/logo.jpg" alt="Logo de Caos News" class="img-fluid rounded-circle" style="max-height: 80px; max-width: 80px;">
-        </a>
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/logo.jpg" alt="Logo de Caos News" class="img-fluid rounded-circle" style="max-height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/views/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/suscripcion.html">Suscripción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-
-
 </header>
 
 <body>
-  <div>
-    <div class="container" style="max-width: 800px; margin: auto;">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner carousel-fade">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="/img/gta.jpg" class="d-block w-100" alt="Imagen no encontrada">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Gta VI</h5>
-              <p>El juego de Rockstar Game sería retrasado al año 2026</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/star-wars.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Star Wars</h5>
-              <p>Star Wars entrega importantes noticias sobre su futuro gamer</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/gta.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/star-wars.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/gta.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div class="container" style="max-width: 800px; margin: auto;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
       </div>
-    </div>
-    <div class="container mt-4">
-      <h2 class="mb-3">Últimas Noticias</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="/img/news1.jpg" class="card-img-top" alt="Noticia sobre el lanzamiento de un nuevo juego">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Nuevo Juego Anunciado</h5>
-              <p class="card-text flex-grow-1">Conoce todos los detalles sobre el último juego anunciado por XYZ
-                Studios, promete revolucionar la industria.</p>
-              <a href="#" class="btn btn-primary mt-auto">Leer más</a>
-            </div>
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="/img/nvidia.webp" class="d-block w-100 img-fluid h-100" alt="Imagen no encontrada">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡Gran anuncio de Nvidia!</h5>
+            <p>Nvidia revela su nueva serie de tarjetas gráficas GeForce RTX 40 con tecnología de trazado de rayos
+              mejorada y rendimiento líder en la industria.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="/img/news2.jpg" class="card-img-top" alt="Actualización de un juego popular">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Gran Actualización para WarQuest</h5>
-              <p class="card-text flex-grow-1">WarQuest recibe una actualización masiva que añade nuevos niveles,
-                personajes y más.</p>
-              <a href="#" class="btn btn-primary mt-auto">Leer más</a>
-            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/playstation.jpg" class="d-block w-100 img-fluid h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡Lanzamiento de la nueva consola PlayStation!</h5>
+            <p>La nueva consola de última generación, X-Play, llegará al mercado el próximo mes con una biblioteca de
+              juegos exclusivos.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="/img/news3.jpg" class="card-img-top" alt="Evento de eSports">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Próximo Evento de eSports</h5>
-              <p class="card-text flex-grow-1">No te pierdas el próximo gran torneo de eSports este mes, con equipos de
-                todo el mundo compitiendo por el gran premio.</p>
-              <a href="#" class="btn btn-primary mt-auto">Leer más</a>
-            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/dark-souls.jpg" class="d-block w-100 img-fluid h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡Gran expansión para Dark Souls!</h5>
+            <p>Se anuncia una expansión masiva para el aclamado juego de rol Dark Souls. ¡Prepárate para enfrentar nuevos desafíos y descubrir secretos oscuros!</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/rol.jpg" class="d-block w-100 img-fluid h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡Nuevo juego de rol en mundo abierto!</h5>
+            <p>Se anuncia un nuevo juego de rol en mundo abierto que promete una experiencia épica con gráficos
+              impresionantes y mecánicas innovadoras.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/esports_stand.jpg" class="d-block w-100 img-fluid h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡Evento exclusivo de eSports!</h5>
+            <p>Se celebrará un evento de eSports con los mejores jugadores del mundo compitiendo por el título en una
+              emocionante batalla.</p>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
+
+  <div class="container mt-4">
+    <h2 class="mb-3">Últimas Noticias</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/news1.jpg" class="card-img-top" alt="Noticia sobre el lanzamiento de un nuevo juego">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nuevo Juego Anunciado</h5>
+            <p class="card-text flex-grow-1">Conoce todos los detalles sobre el último juego anunciado por XYZ
+              Studios, promete revolucionar la industria.</p>
+            <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/news2.jpg" class="card-img-top" alt="Actualización de un juego popular">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Gran Actualización para WarQuest</h5>
+            <p class="card-text flex-grow-1">WarQuest recibe una actualización masiva que añade nuevos niveles,
+              personajes y más.</p>
+            <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/news3.jpg" class="card-img-top" alt="Evento de eSports">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Próximo Evento de eSports</h5>
+            <p class="card-text flex-grow-1">No te pierdas el próximo gran torneo de eSports este mes, con equipos de
+              todo el mundo compitiendo por el gran premio.</p>
+            <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-<footer class="bg-dark text-white mt-4">
-  <div class="container py-4">
+<footer class="bg-dark text-white py-1">
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h5>Caos News</h5>
