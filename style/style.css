@@ -1,14 +1,14 @@
-
-
 body {
     padding-top: 40px; 
+    position: relative; /* Asegura que el footer se mantenga en la parte inferior */
+    min-height: 100vh; /* Hace que el cuerpo de la página ocupe al menos todo el alto de la ventana del navegador */
 }
 
 #carouselExampleCaptions .carousel-item img {
-    width: 100!important;
-    height: 400px!important; /* Puedes ajustar esta altura según tus necesidades */
+    width: 100%!important;
+    height: 400px!important; 
     object-fit: cover!important;
-  }
+}
 
 .footer-login {
     position: absolute;
@@ -17,6 +17,10 @@ body {
     height: 200px; 
 }
 
-footer{
-    margin-top: 100px;
+.footer-subscripcion{
+    margin-top: 280px;
+    bottom: 0;
+    width: 100%;
+    height: 200px; 
 }
+
