@@ -4,161 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Caos News - Contacto</title>
-
-    <style>
-        .tarjeta-miembro {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .tarjeta-miembro img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        .tarjeta-miembro h3 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        .icono-redsocial li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        
-        .icono-redsocial {
-            display: flex;
-            justify-content: flex-end; /* Alinear Iconos*/
-        }
-
-        .icono-redsocial {
-            margin-left: 10px; /* Ajustar espacio entre iconos */
-        }
-        .icono-redsocial {
-            list-style-type: none; /* Remover estilos de lista los, que odio y no jkasbhjfasasdjbadhja y me quitaron 3 horas d emi vida */
-            padding: 0; /* Ajustar padding, puede cambiarse del default */
-            margin: 0; /* Ajustar margenes*/
-            display: flex;
-            justify-content: flex-end; /* Alinear contenidos, aca es donde esta el clasico centrar */
-        }
-
-        .icono-redsocial {
-            margin-left: 10px; /* espacio entre iconos*/
-        }
-
-        .icono-redsocial img {
-            width: 30px; /* para ajustar tamaño de iconos*/
-            height: auto;
-        }
-
-        .icono-redsocial li:last-child {
-            margin-right: 0;
-        } /* El tipo de stack overflw uso esto y le funciono, no se porque pero hace que se vea bien */
-    </style>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Caos News - Login</title>
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/views/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/suscripcion.html">Suscripción</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="/views/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="/views/login.html">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+<header class="mb-2">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/logo.jpg" alt="Logo de Caos News" class="img-fluid rounded-circle" style="max-height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/views/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/suscripcion.html">Suscripción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <body>
-    <section>
-    <div class="container">
-        <div class="row">
-            <!-- Primera tarjeta Filia 1 Columna 1 -->
-            <div class="col-md-4">
-                <div class="tarjeta-miembro">
-                    <img src="https://static.wikia.nocookie.net/silly-cat/images/a/a0/Gusic.png" alt="Person 1">
-                    <h3>Person 1</h3>
-                    <ul class="icono-redsocial">
-                        <li>  <a href="#" class="social-icon">
-                            <img src="#" alt="SocMedia1">
-                            </a></li> 
-                         <li>  <a href="#" class="social-icon">
-                                <img src="#" alt="SocMedia2">
-                            </a></li> 
-                      
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Segunda tarjeta Fila 1 Columna 2 -->
-            <div class="col-md-4">
-                <div class="tarjeta-miembro">
-                    <img src="https://i.pinimg.com/736x/7a/d9/45/7ad945f9fbfe4b558a707af6e1f444f9.jpg" alt="Person 2">
-                    <h3>Person 2</h3>
-                    <ul class="icono-redsocial">
-                        <li>  <a href="#" class="social-icon">
-                            <img src="#" alt="SocMedia1">
-                            </a></li> 
-                         <li>  <a href="#" class="social-icon">
-                                <img src="#" alt="SocMedia2">
-                            </a></li> 
-                      
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Tercera tarjeta Fila 1 COlumna 3 -->
-            <div class="col-md-4">
-                <div class="tarjeta-miembro">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAz4AK24kpyxVQThREd3P4Ot3ML6WpMKjr3Oxij8Nq-w&s" alt="Person 3">
-                    <h3>Person 3</h3>
-                    <ul class="icono-redsocial">
-                        <li>  <a href="#" class="social-icon">
-                            <img src="#" alt="SocMedia1">
-                            </a></li> 
-                         <li>  <a href="https://twitter.com/bigfootjinx?lang=es" class="social-icon">
-                                <img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b?h=464" alt="Twitter_icon">
-                            </a></li> 
-                      
-                    </ul>
-                </div>
-            </div>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" required>
         </div>
-    
-        <!-- SEGUNDA FILA (HACER NUEVA ROW PARA 3 NUEVAS PERSONAS PASADO LA SIGUIENTE COLUMNA 3) -->
-        <div class="row">
-            <!-- Cuarta Tarjeta Fila 2 Columna 1 -->
-            <div class="col-md-4">
-                <div class="tarjeta-miembro">
-                    <img src="https://i.kym-cdn.com/entries/icons/original/000/046/919/crunching_cat.jpg" alt="Person 4">
-                    <h3>Person 4</h3>
-                    <li>  <a href="#" class="social-icon">
-                        <img src="#" alt="SocMedia1">
-                        </a></li> 
-                     <li>  <a href="#" class="social-icon">
-                            <img src="#" alt="SocMedia2">
-                        </a></li> 
-                    </ul>
-                </div>
-            </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="input-nombre">
         </div>
-    </div>
-</section>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<footer class="bg-dark text-white py-1 footer-login pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Caos News</h5>
+        <p>Puedes contactarnos a través de:</p>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> contacto@caosnews.com</li>
+          <li><strong>Teléfono:</strong> +1 234 567 8900</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Enlaces rápidos</h5>
+        <ul class="list-unstyled">
+          <li><a href="/views/contacto.html" class="text-white">Formulario de Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>
