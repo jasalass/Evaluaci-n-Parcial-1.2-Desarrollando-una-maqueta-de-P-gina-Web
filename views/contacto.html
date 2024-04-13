@@ -28,13 +28,17 @@
           <li class="nav-item">
             <a class="nav-link" href="/views/login.html">Login</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/busqueda.html">Busqueda</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
-<body>
+<body class="mt-5 body-contacto">
+    <h2>Formulario de contacto</h2>
     <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Correo</label>
@@ -42,8 +46,13 @@
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="input-nombre">
+          <input type="text" class="form-control" id="input-nombre" placeholder="Ingrese su nombre completo" required>
         </div>
+        <div>
+            <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+            <textarea class="form-control" placeholder="Ingrese su mensaje aquí" id="floatingTextarea2" style="height: 100px" required></textarea>
+           
+          </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
 </body>
