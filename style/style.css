@@ -1,12 +1,16 @@
 
 
+body {
+    padding-top: 40px; /* Altura del navbar en píxeles */
+}
+
 #carouselExampleCaptions .carousel-item img {
     width: 100!important;
     height: 400px!important; /* Puedes ajustar esta altura según tus necesidades */
     object-fit: cover!important;
   }
 
-footer {
+.footer-login {
     position: absolute;
     bottom: 0;
     width: 100%;
