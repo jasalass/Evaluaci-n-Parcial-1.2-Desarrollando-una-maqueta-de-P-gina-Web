@@ -45,8 +45,6 @@ function crearCard(juegos){
     }
 
     return lista
-    
-   
 }
 
 let juegos;
@@ -54,9 +52,6 @@ let juegos;
 (async () =>{
      juegos = await obtenerJuegos()
      let arreglo = crearCard(await juegos)
-     
-     
-     
      $(document).ready(function(){
         arreglo.forEach(element => {
             console.log(element)
