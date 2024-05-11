@@ -1,4 +1,5 @@
 
+
 const navbar = `<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="/index.html">
@@ -32,7 +33,7 @@ const navbar = `<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-to
 
 const footer = `<div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h5>Caos News</h5>
                             <p>Puedes contactarnos a través de:</p>
                             <ul class="list-unstyled">
@@ -40,21 +41,21 @@ const footer = `<div class="container">
                             <li><strong>Teléfono:</strong> +1 234 567 8900</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h5>Enlaces rápidos</h5>
                             <ul class="list-unstyled">
                                 <li><a href="/views/contacto.html" class="text-white">Formulario de Contacto</a></li>
                                 <li><a href="/views/contacto-laboral.html" class="text-white">Trabaja con nosotros</a></li>
                             </ul>
                         </div>
+                        
                     </div>
-                </div>
-                `
+                </div>`
 
 
 $(document).ready(function(){
     $("header").html(navbar)
     $("footer").html(footer)
-
+   
 })
 
