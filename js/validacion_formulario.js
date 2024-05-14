@@ -39,6 +39,16 @@ $("#resena").on("input", () => {
 });
 
 
+//Comprobar longitud de rut
+$("#rut").on("input", function() {
+    // Obtener el valor del campo de entrada del RUT
+    var rut = $(this).val();
+    // Limitar la longitud del RUT a 8 caracteres
+    if (rut.length > 8) {
+        $(this).val(rut.slice(0, 8));
+    }
+});
+
 //Validación de campos en formulario
 $("#boton-enviar").click((event) =>{
     event.preventDefault() //Previene el envío del formulario al hacer click en el botón de submit
@@ -57,14 +67,21 @@ $("#boton-enviar").click((event) =>{
         if(!validacion_rut){
             rut.addClass("is-invalid ") //Agregar clases a las etiquetas para mostrar los campos inválidos
             dv.addClass("is-invalid ")
+        }else{
+            rut.removeClass("is-invalid")
+            VarDate.removeClass("is-invalid")
         }
 
         if(!nombre.val()){
             nombre.addClass("is-invalid")
+        }else{
+            nombre.removeClass("is-invalid")
         }
 
         if(!email.val()){
             email.addClass("is-invalid")
+        }else{
+            email.removeClass("is-invalid")
         }
 
         alert("Revise la información ingresada")

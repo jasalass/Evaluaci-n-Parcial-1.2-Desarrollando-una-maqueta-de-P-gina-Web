@@ -26,7 +26,7 @@ function crearCard(juegos){
     let lista = [] //Declaración de arreglo donde se guardarán las cards creadas
 
     // Creación de cards
-    for (let index = 0; index < 6; index++) {
+    for (let index = 0; index < 5; index++) {
         //Obtener información relevante de la lista "juegos"
         let precio =  juegos[index].currentPrice/100
         let titulo =  juegos[index].title
