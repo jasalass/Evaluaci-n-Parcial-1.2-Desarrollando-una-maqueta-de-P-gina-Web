@@ -68,7 +68,7 @@ $("#boton-enviar").click((event) =>{
             rut.addClass("is-invalid ") //Agregar clases a las etiquetas para mostrar los campos inválidos
             dv.addClass("is-invalid ")
         }else{
-            rut.removeClass("is-invalid")
+            rut.removeClass("is-invalid")//Quitar las etiquetas de invalidez si la comprobación es satisfactoria
             VarDate.removeClass("is-invalid")
         }
 
@@ -87,6 +87,6 @@ $("#boton-enviar").click((event) =>{
         alert("Revise la información ingresada")
         
     } else {
-        $("#form-laboral").submit()
+        $("#form-laboral").submit() //Si todo está ok envía el formulario
     }
 })
